@@ -49,6 +49,10 @@ public:
             if(en==0){
                 continue;
             }
+            if(en < best[r][c][mask]){
+                 continue;
+            }
+   
             for(int d=0;d<4;d++){
                 int nr=r+dr[d];
                 int nc=c+dc[d];
